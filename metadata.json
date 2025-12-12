@@ -1,0 +1,5 @@
+{
+  "name": "Generative Glitch Contour",
+  "description": "A generative art tool that creates distorted contour aesthetics using Perlin noise pixel displacement. Tweak parameters to create unique topographies.",
+  "requestFramePermissions": []
+}
