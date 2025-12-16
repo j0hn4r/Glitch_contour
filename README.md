@@ -18,3 +18,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kzDKnOvAhLVJiqxkQl1sj2
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploying to GitHub Pages
+
+The Vite configuration is set to serve assets from the repository subpath (`/Glitch_contour/`).
+If you deploy under a different path (for example, an organization page), set `VITE_BASE_PATH`
+in your environment to the desired base URL before running `npm run build`.
