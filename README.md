@@ -21,6 +21,19 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kzDKnOvAhLVJiqxkQl1sj2
 
 ## Deploying to GitHub Pages
 
-The Vite configuration is set to serve assets from the repository subpath (`/Glitch_contour/`).
-If you deploy under a different path (for example, an organization page), set `VITE_BASE_PATH`
-in your environment to the desired base URL before running `npm run build`.
+### GitHub Actions workflow
+
+This repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds
+and deploys the site to GitHub Pages whenever changes are pushed to `main` (or when manually
+triggered via the **Run workflow** button in the Actions tab). The workflow assumes that Pages is
+configured to serve from the `GitHub Pages` environment.
+
+No additional secrets are required, but you can override the base path used during the build by
+setting a `VITE_BASE_PATH` environment variable in the workflow or repository settings if you plan
+to deploy under a different subpath.
+
+### Manual build
+
+The Vite configuration is set to serve assets from the repository subpath (`/Glitch_contour/`). If
+you deploy under a different path (for example, an organization page), set `VITE_BASE_PATH` in your
+environment to the desired base URL before running `npm run build`.
